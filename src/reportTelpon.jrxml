@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="99821603-75fa-4881-8483-5129fd6ce28f">
+	<property name="ireport.zoom" value="3.0"/>
+	<property name="ireport.x" value="405"/>
+	<property name="ireport.y" value="480"/>
+	<style name="color">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{villa}.equals("Amatsuki")]]></conditionExpression>
+			<style backcolor="#DC381F"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{villa}.equals("Soraru")]]></conditionExpression>
+			<style backcolor="#38ACEC"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{villa}.equals("USSS")]]></conditionExpression>
+			<style backcolor="#FFDAB9"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{villa}.equals("XYZ")]]></conditionExpression>
+			<style backcolor="#B93B8F"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{villa}.equals("Eve")]]></conditionExpression>
+			<style backcolor="#5CB3FF"/>
+		</conditionalStyle>
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$F{villa}.equals("Sou")]]></conditionExpression>
+			<style backcolor="#6698FF"/>
+		</conditionalStyle>
+	</style>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     *
+FROM
+bukutelpon]]>
+	</queryString>
+	<field name="kode_rmh" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nmr_tlp" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="villa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band height="802" splitType="Stretch">
+			<image vAlign="Bottom">
+				<reportElement x="0" y="435" width="555" height="367" uuid="4b3d64a6-cd65-421e-8a2a-cd6e39951c0a"/>
+				<imageExpression><![CDATA["C:\\Users\\Asus\\Downloads\\pngwing.com.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="122" y="8" width="423" height="37" uuid="11a85acc-c823-4204-a3f7-49499c3f92d3"/>
+				<textElement textAlignment="Center">
+					<font size="22" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[List Nomor Telepon Perumahan Hikifest]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="317" y="45" width="221" height="20" uuid="9e91ad21-fe54-43af-9258-be931f5eaeab"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Jalan Utaite Nomor 123, Tokyo, Jepang]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="74" width="555" height="1" forecolor="#CCCCFF" uuid="32cfbcc1-2ece-4d51-baf0-1ed38ddf63ed"/>
+			</line>
+			<line>
+				<reportElement x="0" y="72" width="555" height="1" forecolor="#CC99FF" uuid="f71103c3-8e95-4fb2-b3b5-5a74456b6d08"/>
+			</line>
+			<image>
+				<reportElement x="32" y="5" width="57" height="57" uuid="d4cb61e0-bed5-41dc-a685-2f49a8f9feff"/>
+				<imageExpression><![CDATA["C:\\Users\\Asus\\Downloads\\usermagentahome_93225.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="365" y="15" width="113" height="20" uuid="e9d97394-335e-46b2-baee-2016dd223d88"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Dicetak pada]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="430" y="15" width="100" height="20" uuid="5d7feda4-43fc-4cc9-8475-4fcc1a534ac5"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<rectangle>
+				<reportElement x="53" y="41" width="68" height="20" backcolor="#9966FF" uuid="bebd0a76-f02d-489c-b250-57ecf6406a65"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="54" y="42" width="65" height="18" backcolor="#9966FF" uuid="9624baff-9597-40df-984b-9450c0dc0f31"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[KODE RMH]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="121" y="41" width="138" height="19" backcolor="#9966FF" uuid="bdf387ff-d1d6-49e6-9b63-b939cb2cc866"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="140" y="41" width="100" height="20" backcolor="#9966FF" uuid="70884e95-4144-441e-8f52-271ecf781b39"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NAMA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="259" y="41" width="104" height="20" backcolor="#9966FF" uuid="b3b46f4a-30bc-4bf9-b415-47937dec256e"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="262" y="43" width="100" height="16" backcolor="#9966FF" uuid="6eb8cca9-9dee-4da2-888c-7fdccc54747d"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOMER TELEPON]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="363" y="41" width="129" height="20" backcolor="#9966FF" uuid="f144e5ff-a737-49d5-907d-0493a3b444bb"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="364" y="43" width="128" height="18" backcolor="#9966FF" uuid="e209550d-89ff-49f3-bc0c-dde63d2020c1"/>
+				<textElement textAlignment="Center">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[VILLA YANG DITEMPATI]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="26" splitType="Stretch">
+			<rectangle>
+				<reportElement style="color" x="53" y="0" width="68" height="25" uuid="08eb767a-f135-49f7-8c5c-8ce67ed104a7"/>
+			</rectangle>
+			<textField>
+				<reportElement x="53" y="0" width="68" height="21" uuid="7545861b-34cc-4ffa-8bf8-876ca2159855"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{kode_rmh}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement style="color" x="121" y="0" width="138" height="25" uuid="77bb7279-64b4-4177-901b-085647b0fc02"/>
+			</rectangle>
+			<textField>
+				<reportElement x="121" y="0" width="138" height="20" uuid="8671c1a6-d987-4d25-a0eb-c584fc243802"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nama}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement style="color" x="259" y="0" width="104" height="25" uuid="88f501f7-b22a-4bcf-a362-19dfe18502d2"/>
+			</rectangle>
+			<textField>
+				<reportElement x="259" y="0" width="104" height="20" uuid="62554339-6929-436f-a061-9816a3fa6271"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{nmr_tlp}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement style="color" mode="Transparent" x="363" y="0" width="129" height="25" uuid="14ec438c-ce90-4dac-b119-a415fc0a2f60"/>
+			</rectangle>
+			<textField>
+				<reportElement x="378" y="1" width="100" height="20" uuid="d2290783-c572-4c03-a973-1605b4ee690f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{villa}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="18" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="93" splitType="Stretch"/>
+	</summary>
+</jasperReport>
